@@ -40,10 +40,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Fluid-HTN">
-      <HintPath>..\Fluid-HTN-Ext\bin\Debug\netstandard2.0\Fluid-HTN.dll</HintPath>
+      <HintPath>..\Fluid-HTN-Ext\bin\$(Configuration)\netstandard2.0\Fluid-HTN.dll</HintPath>
     </Reference>
     <Reference Include="Fluid-HTN-Ext">
-      <HintPath>..\Fluid-HTN-Ext\bin\Debug\netstandard2.0\Fluid-HTN-Ext.dll</HintPath>
+      <HintPath>..\Fluid-HTN-Ext\bin\$(Configuration)\netstandard2.0\Fluid-HTN-Ext.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -53,6 +53,12 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlwaysSucceedSelectorTest.cs" />
