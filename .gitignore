@@ -8,3 +8,8 @@
 # Builds
 /Fluid-HTN-Ext/obj
 /Fluid-HTN-Ext/bin
+/Fluid-HTN-Ext.UnitTests/obj
+/Fluid-HTN-Ext.UnitTests/bin
+
+# NuGet packages
+/packages/
